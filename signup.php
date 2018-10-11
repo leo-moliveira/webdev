@@ -29,7 +29,7 @@
   <div>
     <?php
    
-    echo "$_POST["inputFName"]"
+    echo $_POST["inputFName"];
       ?>
   </div>
   
