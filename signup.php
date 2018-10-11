@@ -38,7 +38,7 @@
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
-            <ul class="list-group list-group-flush float-left">
+            <ul class="list-group list-group-flush col-sm-4">
                <li class="list-group-item">Nome</li>
                <li class="list-group-item">Sobrenome</li>
                <li class="list-group-item">Email</li>
@@ -47,7 +47,7 @@
                <li class="list-group-item">Estado</li>
                <li class="list-group-item">Codigo Postal</li>
             </ul>
-            <ul class="list-group list-group-flush float-right">
+            <ul class="list-group list-group-flush col-sm-4">
                <li class="list-group-item"><?php echo $nome ?></li>
                <li class="list-group-item"><?php echo $sobrenome ?></li>
                <li class="list-group-item"><?php echo $email ?></li>
