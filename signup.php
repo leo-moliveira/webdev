@@ -26,6 +26,10 @@
     </div>
   </nav>
   
+  <div>
+    echo "$_POST["inputFName"]"
+  </div>
+  
  <div class="py-3">
   <div class="container">
     <div class="row">
