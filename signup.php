@@ -27,7 +27,10 @@
   </nav>
   
   <div>
+    <?php
+   
     echo "$_POST["inputFName"]"
+      ?>
   </div>
   
  <div class="py-3">
