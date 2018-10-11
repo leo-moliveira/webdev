@@ -27,15 +27,15 @@
   <div>
     <?php
    
-    echo $_POST["inputFName"]; 
-     echo $_POST["inputSName"]; 
-     echo $_POST["inputEmail"]; 
-     echo $_POST["inputPassword"]; 
-     echo $_POST["inputAddress"]; 
-     echo $_POST["inputCity"];
-          echo $_POST["inputState"]; 
-          echo $_POST["inputZip"]; 
-          echo $_POST["invalidCheck"]; 
+    echo $_POST["inputFName"]."\n"; 
+     echo $_POST["inputSName"]."\n"; 
+     echo $_POST["inputEmail"]."\n"; 
+     echo md5($_POST["inputPassword"])."\n"; 
+     echo $_POST["inputAddress"]."\n"; 
+     echo $_POST["inputCity"]."\n";
+          echo $_POST["inputState"]."\n"; 
+          echo $_POST["inputZip"]."\n"; 
+          echo $_POST["invalidCheck"]."\n"; 
       ?>
   </div>
   
