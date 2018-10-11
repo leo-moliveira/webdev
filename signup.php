@@ -28,8 +28,8 @@
   
   <div>
     <?php
-   
-    echo $_POST["inputFName"];
+   $name = $_POST["inputFName"]
+    echo $name;
       ?>
   </div>
   
