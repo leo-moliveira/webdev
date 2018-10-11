@@ -1,3 +1,14 @@
+<?php
+   $nome = $_POST["inputFName"];
+   $sobrenome = $_POST["inputSName"];
+   $email = $_POST["inputEmail"];
+   $password = md5($_POST["inputPassword"]); 
+   $endereco = $_POST["inputAddress"]; 
+   $ciddade = $_POST["inputCity"];
+   $estado = $_POST["inputState"]; 
+   $codigoPostal = $_POST["inputZip"]; 
+   $termoValid =$_POST["invalidCheck"]; 
+      ?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -24,21 +35,9 @@
     </div>
   </nav>
   
-  <div>
-    <?php
-   
-    echo $_POST["inputFName"]."\n"; 
-     echo $_POST["inputSName"]."\n"; 
-     echo $_POST["inputEmail"]."\n"; 
-     echo md5($_POST["inputPassword"])."\n"; 
-     echo $_POST["inputAddress"]."\n"; 
-     echo $_POST["inputCity"]."\n";
-          echo $_POST["inputState"]."\n"; 
-          echo $_POST["inputZip"]."\n"; 
-          echo $_POST["invalidCheck"]."\n"; 
-      ?>
-  </div>
-  
+  <?php
+  echo $nome . $sobrenome .  $email . $password . $endereco .  $ciddade . $estado . $codigoPostal . $termoValid;
+  ?>
  <div class="py-3">
   <div class="container">
     <div class="row">
