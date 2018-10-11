@@ -34,7 +34,19 @@
       </div>
     </div>
   </nav>
-  
+      <div class="alert alert-success" role="alert">
+      <h1>Usuário criado com sucesso!!</h1>
+      </div>
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item">Nome</li>
+      <li class="list-group-item">Sobrenome</li>
+      <li class="list-group-item">Email</li>
+      <li class="list-group-item">Endereço</li>
+      <li class="list-group-item">Cidade</li>
+     <li class="list-group-item">Estado</li>
+     <li class="list-group-item">Codigo Postal</li>
+  </ul>
+   
   <?php
   echo $nome . $sobrenome .  $email . $password . $endereco .  $ciddade . $estado . $codigoPostal . $termoValid;
   ?>
