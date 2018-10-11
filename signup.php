@@ -39,7 +39,7 @@
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
-       <div class="w-50 p-3">
+       <div class="w-50 p-3 float-left">
             <ul class="list-group list-group-flush">
                <li class="list-group-item">Nome</li>
                <li class="list-group-item">Sobrenome</li>
