@@ -27,15 +27,15 @@
   <div>
     <?php
    
-    echo $_POST["inputFName"]; <BR>
-     echo $_POST["inputSName"]; <BR>
-     echo $_POST["inputEmail"]; <BR>
-     echo $_POST["inputPassword"]; <BR>
-     echo $_POST["inputAddress"]; <BR>
-     echo $_POST["inputCity"]; <BR>
-          echo $_POST["inputState"]; <BR>
-          echo $_POST["inputZip"]; <BR>
-          echo $_POST["invalidCheck"]; <BR>
+    echo $_POST["inputFName"]; 
+     echo $_POST["inputSName"]; 
+     echo $_POST["inputEmail"]; 
+     echo $_POST["inputPassword"]; 
+     echo $_POST["inputAddress"]; 
+     echo $_POST["inputCity"];
+          echo $_POST["inputState"]; 
+          echo $_POST["inputZip"]; 
+          echo $_POST["invalidCheck"]; 
       ?>
   </div>
   
