@@ -50,7 +50,7 @@
                <li class="list-group-item">Codigo Postal</li>
             </ul> 
         </div>
-         <div class="w-50 p-3 float-right>
+         <div class="w-50 p-3 float-right">
             <ul class="list-group list-group-flush">
                <li class="list-group-item"><?php echo $nome ?></li>
                <li class="list-group-item"><?php echo $sobrenome ?></li>
