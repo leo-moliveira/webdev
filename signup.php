@@ -39,9 +39,8 @@
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
-       <div class="row">
-         <div class="col-sm-4">
-          <ul class="list-group list-group-flush">
+       <div class="col-md-6">
+            <ul class="list-group list-group-flush">
                <li class="list-group-item">Nome</li>
                <li class="list-group-item">Sobrenome</li>
                <li class="list-group-item">Email</li>
@@ -49,10 +48,9 @@
                <li class="list-group-item">Cidade</li>
                <li class="list-group-item">Estado</li>
                <li class="list-group-item">Codigo Postal</li>
-            </ul>  
-          </div>
-         <div class="col-sm-6"></div>
-         <div class="col-sm-4">
+            </ul> 
+        </div>
+         <div class="col-md-6">
             <ul class="list-group list-group-flush">
                <li class="list-group-item"><?php echo $nome ?></li>
                <li class="list-group-item"><?php echo $sobrenome ?></li>
@@ -62,9 +60,9 @@
                <li class="list-group-item"><?php echo $estado ?></li>
                <li class="list-group-item"><?php echo $codigoPostal ?></li>
             </ul>
-          </div>
-      </div>
-       </div>
+         </div>
+        
+     </div>
     
  <div class="py-3">
   <div class="container">
