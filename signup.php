@@ -63,7 +63,9 @@
             </ul>
          </div>
        </div>
-       <a class="btn btn-primary align-items-center" href="index.html" role="button">Voltar</a>
+       <div class="align-items-center">
+       <a class="btn btn-primary" href="index.html" role="button">Voltar</a>
+       </div>
      </div>
     
  <div class="py-3">
