@@ -63,7 +63,7 @@
             </ul>
          </div>
        </div>
-       <div class="btn-group btn-group-justified">
+       <div class="btn-group btn-group-center">
        <a class="btn btn-primary" href="index.html" role="button">Voltar</a>
        </div>
      </div>
