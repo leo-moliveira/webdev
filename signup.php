@@ -35,7 +35,7 @@
     </div>
   </nav>
     
-    <div class=container>
+    <div class="container-fluid">
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
