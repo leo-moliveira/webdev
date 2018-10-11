@@ -39,7 +39,8 @@
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
-       <div class="p-3" style="width :48%">
+       <div style="display: flex; justify-content: space-around">
+       <div class="p-3" style="width :48% ">
             <ul class="list-group list-group-flush">
                <li class="list-group-item">Nome</li>
                <li class="list-group-item">Sobrenome</li>
@@ -50,7 +51,7 @@
                <li class="list-group-item">Codigo Postal</li>
             </ul> 
         </div>
-         <div class="p-3" style="width :48%">
+        <div class="p-3" style="width :48%">
             <ul class="list-group list-group-flush">
                <li class="list-group-item"><?php echo $nome ?></li>
                <li class="list-group-item"><?php echo $sobrenome ?></li>
@@ -61,7 +62,7 @@
                <li class="list-group-item"><?php echo $codigoPostal ?></li>
             </ul>
          </div>
-        
+       </div>
      </div>
     
  <div class="py-3">
