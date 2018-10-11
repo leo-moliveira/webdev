@@ -39,7 +39,7 @@
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
-       <div class="w-50 p-3 float-left">
+       <div class="w-50 p-3 left">
             <ul class="list-group list-group-flush">
                <li class="list-group-item">Nome</li>
                <li class="list-group-item">Sobrenome</li>
@@ -50,7 +50,7 @@
                <li class="list-group-item">Codigo Postal</li>
             </ul> 
         </div>
-         <div class="w-50 p-3 float-right">
+         <div class="w-50 p-3 right">
             <ul class="list-group list-group-flush">
                <li class="list-group-item"><?php echo $nome ?></li>
                <li class="list-group-item"><?php echo $sobrenome ?></li>
