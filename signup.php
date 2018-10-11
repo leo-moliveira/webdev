@@ -38,24 +38,24 @@
       <div class="alert alert-success" role="alert">
       <h1>Usuário criado com sucesso!!</h1>
       </div>
-            <li class="list-group list-group-flush">
-               <ul class="list-group-item">Nome</ul>
-               <ul class="list-group-item">Sobrenome</ul>
-               <ul class="list-group-item">Email</ul>
-               <ul class="list-group-item">Endereço</ul>
-               <ul class="list-group-item">Cidade</ul>
-               <ul class="list-group-item">Estado</ul>
-               <ul class="list-group-item">Codigo Postal</ul>
-            </li>
-            <li class="list-group list-group-flush">
-               <ul class="list-group-item"><?php echo $nome ?></ul>
-               <ul class="list-group-item"><?php echo $sobrenome ?></ul>
-               <ul class="list-group-item"><?php echo $email ?></ul>
-               <ul class="list-group-item"><?php echo $endereco ?></ul>
-               <ul class="list-group-item"><?php echo $ciddade ?></ul>
-               <ul class="list-group-item"><?php echo $estado ?></ul>
-               <ul class="list-group-item"><?php echo $codigoPostal ?></ul>
-            </li>
+            <ul class="list-group list-group-flush float-left">
+               <li class="list-group-item">Nome</li>
+               <li class="list-group-item">Sobrenome</li>
+               <li class="list-group-item">Email</li>
+               <li class="list-group-item">Endereço</li>
+               <li class="list-group-item">Cidade</li>
+               <li class="list-group-item">Estado</li>
+               <li class="list-group-item">Codigo Postal</li>
+            </ul>
+            <ul class="list-group list-group-flush float-right">
+               <li class="list-group-item"><?php echo $nome ?></li>
+               <li class="list-group-item"><?php echo $sobrenome ?></li>
+               <li class="list-group-item"><?php echo $email ?></li>
+               <li class="list-group-item"><?php echo $endereco ?></li>
+               <li class="list-group-item"><?php echo $ciddade ?></li>
+               <li class="list-group-item"><?php echo $estado ?></li>
+               <li class="list-group-item"><?php echo $codigoPostal ?></li>
+            </ul>
        </div>
  <div class="py-3">
   <div class="container">
