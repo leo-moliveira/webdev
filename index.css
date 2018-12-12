@@ -6360,3 +6360,26 @@ a.text-dark:hover, a.text-dark:focus {
     height: 20%! important;
     line-height: 60px !important;
     }
+    .login_main-div {
+      background: #ffffff none repeat scroll 0 0;
+      border-radius: 2px;
+      margin: 10px auto 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+.login-form .form-control {
+      background: #f7f7f7 none repeat scroll 0 0;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      font-size: 14px;
+      height: 50px;
+      line-height: 50px;
+      width: 99%;
+      max-width: 80%;
+      border-radius: 2px;
+      margin: 10px auto 30px;
+    }
+@media (min-width: 992px) {
+    .login-form .form-control{
+        max-width: 38%;
+    }}
