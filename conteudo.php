@@ -101,12 +101,16 @@ if($_GET['p'] == 'cadastro') : ?>
       <input type="text" name="inputDesc" class="form-control" id="inputDesc" required>
     </div>
     <div class="form-group">
-      <label for="inputFoto">Adicione uma foto</label>
-      <input type="text" name="inputFoto" class="form-control" id="inputFoto" required>
-    </div>
-    <div class="form-group">
       <label for="inputTarifa">Tarifa cobrada por hora</label>
       <input type="text" name="inputTarifa" class="form-control" id="inputTarifa" required>
+    </div>
+    <div class="form-group">
+      <label for="inputFoto">Adicione uma foto</label>
+      <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                <input type="file" id="inputFoto" required>
+                </span>
+      </span>
     </div>
   </div>
   </div>
