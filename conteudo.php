@@ -26,6 +26,20 @@ if($_GET['p'] == 'home') : ?>
 cidade,Estado
 servico,descicao,foto,tarifa*/
 if($_GET['p'] == 'cadastro') : ?>
+<script>
+  $(document).ready(function() {
+    $("#com_servico").hide();
+    $('#check_servico').change(function() {
+      if($(this).is(":checked")) {
+          $("#com_servico").show();
+          $("#servico").hide();
+       } else {
+          $("#com_servico").hide();
+          $("#servico").show();
+       }
+    });
+  });
+</script>
 <form class="col-xs-12 col-sm-12 mt-2" action="signup.php" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
@@ -69,16 +83,32 @@ if($_GET['p'] == 'cadastro') : ?>
       <input pattern="[0-9]{5}-[0-9]{3}" name="inputZip" class="form-control" id="inputZip" placeholder="Ex.: 00000-000" maxlength="9" autocomplete="off" required>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group" id="servico">
     <div class="form-check">
-      <input class="form-check-input is-invalid" name="invalidCheck" type="checkbox" value="" id="invalidCheck" required>
+      <input class="form-check-input" name="check_servico" type="checkbox" value="" id="check_servico" required>
       <label class="form-check-label" for="validCheck">
-        Concordo com os termos de uso.
+        <h6>Deseja prestar serviços</h6>
       </label>
-      <div class="invalid-feedback">
-        Você precisa marcar antes de enviar!
-      </div>
     </div>
+  </div>
+  <div class="form-group" id="com_servico">
+    <div class="form-group">
+      <label for="inputServico">Serviço</label>
+      <input type="text" name="inputServico" class="form-control" id="inputServico" required>
+    </div>
+    <div class="form-group">
+      <label for="inputDesc">Descreva o serviço</label>
+      <input type="text" name="inputDesc" class="form-control" id="inputDesc" required>
+    </div>
+    <div class="form-group">
+      <label for="inputFoto">Adicione uma foto</label>
+      <input type="text" name="inputFoto" class="form-control" id="inputFoto" required>
+    </div>
+    <div class="form-group">
+      <label for="inputTarifa">Tarifa cobrada por hora</label>
+      <input type="text" name="inputTarifa" class="form-control" id="inputTarifa" required>
+    </div>
+  </div>
   </div>
   <button type="submit" class="btn btn-primary">Sign up</button>
 </form>
