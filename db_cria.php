@@ -13,7 +13,6 @@ $sql="CREATE TABLE cadastro (
       cpf int(11) NOT NULL,
       nome varchar(200) NOT NULL,
       email varchar(80) NOT NULL,
-      telefone int(13) NOT NULL,
       endereco varchar(150) NOT NULL,
       cep int(9) NOT NULL,
       id_cidade int(11) NOT NULL,

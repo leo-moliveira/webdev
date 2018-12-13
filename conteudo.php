@@ -40,7 +40,7 @@ if($_GET['p'] == 'cadastro') : ?>
     });
   });
 </script>
-<form class="col-xs-12 col-sm-12 mt-2" action="signup.php" method="post">
+<form class="col-xs-12 col-sm-12 mt-2" action="cadastro.php" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputFName">Nome</label>
@@ -102,7 +102,7 @@ if($_GET['p'] == 'cadastro') : ?>
   </div>
   <div class="form-group" id="servico">
     <div class="form-check">
-      <input class="form-check-input" name="check_servico" type="checkbox" value="" id="check_servico" required>
+      <input class="form-check-input" name="check_servico" type="checkbox" id="check_servico">
       <label class="form-check-label" for="validCheck">
         <h6>Deseja prestar serviços</h6>
       </label>
@@ -111,34 +111,34 @@ if($_GET['p'] == 'cadastro') : ?>
   <div class="form-group" id="com_servico">
     <div class="form-group">
       <label for="inputServico">Serviço</label>
-      <input type="text" valeu="" name="inputServico" class="form-control" id="inputServico" required>
+      <input type="text" valeu="1" name="inputServico" class="form-control" id="inputServico" >
     </div>
     <div class="form-group">
       <label for="inputDesc">Descreva o serviço</label>
-      <input type="text" valeu="" name="inputDesc" class="form-control" id="inputDesc" required>
+      <input type="text" value="1" name="inputDesc" class="form-control" id="inputDesc" >
     </div>
     <div class="form-group">
       <label for="inputTarifa" valeu="">Tarifa cobrada por hora</label>
-      <input type="text" name="inputTarifa" class="form-control" id="inputTarifa" required>
+      <input type="text" value="1" name="inputTarifa" class="form-control" id="inputTarifa" >
     </div>
     <div class="form-group">
       <label for="inputFoto" valeu="">Adicione uma foto</label>
       <span class="input-group-btn">
                 <span class="btn btn-default btn-file">
-                <input type="file" id="inputFoto" required>
+                <input type="file" value="1" id="inputFoto" >
                 </span>
       </span>
     </div>
   </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign up</button>
+  <button type="submit" value="Enviar" class="btn btn-primary">Sign up</button>
 </form>
+
 <?php endif; ?>
 
 <?php
 //Carrega tela de login
 if($_GET['p'] == 'entrar') : ?>
-
 <script>
 $(document).ready(function(){
 	$('#errolog').hide(); //Esconde o elemento com id errolog
