@@ -65,17 +65,34 @@ if($_GET['p'] == 'cadastro') : ?>
     <label for="inputEndereco">Endereço</label>
     <input type="text" name="inputEndereco" class="form-control" id="inputEndereco" required>
   </div>
+
    <div class="form-row ">
-    <div class="form-group col-md-4">
-      <label for="inputCidade">Cidade</label>
-      <select type="text" name="inputCidade" class="form-control" id="inputCidade" required>
-        <option label="Selecione ...">
-      </select>
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputEstado">Estado</label>
-      <select id="inputEstado" name="inputEstado" class="form-control" required>
-	      	<option label="Selecione ...">
+     <div class="form-group col-md-4">
+       <label for="inputEstado">Estado</label>
+       <select id="inputEstado" name="inputEstado" class="form-control" required>
+ 	      	<option label="Selecione ...">
+            <?php
+            require('db_funcoes.php');
+            $pdo = connect_to_database("servweb");
+            $sql= "SELECT nome FROM estados ORDER BY nome ASC";
+            $estados = $pdo->query($sql);
+          while ($row = $estados->fetch()) {
+            print "<option value=".$row['nome'].">".$row['nome']."</option>";
+          }
+
+
+      print"</select>
+     </div>
+    <div class=\"form-group col-md-4\">
+      <label for=\"inputCidade\">Cidade</label>
+      <select type=\"text\" name=\"inputCidade\" class=\"form-control\" id=\"inputCidade\" required>
+        <option label=\"Selecione ...\">";
+          $sql= "SELECT nome FROM cidades ORDER BY nome ASC";
+          $cidades = $pdo->query($sql);
+          while ($row = $cidades->fetch()) {
+            print "<option value=".$row['nome'].">".$row['nome']."</option>";
+          }
+          ?>
       </select>
     </div>
     <div class="form-group col-md-2">
@@ -94,18 +111,18 @@ if($_GET['p'] == 'cadastro') : ?>
   <div class="form-group" id="com_servico">
     <div class="form-group">
       <label for="inputServico">Serviço</label>
-      <input type="text" name="inputServico" class="form-control" id="inputServico" required>
+      <input type="text" valeu="" name="inputServico" class="form-control" id="inputServico" required>
     </div>
     <div class="form-group">
       <label for="inputDesc">Descreva o serviço</label>
-      <input type="text" name="inputDesc" class="form-control" id="inputDesc" required>
+      <input type="text" valeu="" name="inputDesc" class="form-control" id="inputDesc" required>
     </div>
     <div class="form-group">
-      <label for="inputTarifa">Tarifa cobrada por hora</label>
+      <label for="inputTarifa" valeu="">Tarifa cobrada por hora</label>
       <input type="text" name="inputTarifa" class="form-control" id="inputTarifa" required>
     </div>
     <div class="form-group">
-      <label for="inputFoto">Adicione uma foto</label>
+      <label for="inputFoto" valeu="">Adicione uma foto</label>
       <span class="input-group-btn">
                 <span class="btn btn-default btn-file">
                 <input type="file" id="inputFoto" required>
@@ -122,6 +139,28 @@ if($_GET['p'] == 'cadastro') : ?>
 //Carrega tela de login
 if($_GET['p'] == 'entrar') : ?>
 
+<script>
+$(document).ready(function(){
+	$('#errolog').hide(); //Esconde o elemento com id errolog
+	$('#login-form').submit(function(){ 	//Ao submeter formulário
+		var login=$('#inputCPF').val();	//Pega valor do campo email
+		var senha=$('#inputPassword').val();	//Pega valor do campo senha
+		$.ajax({			//Função AJAX
+			url:"login.php",			//Arquivo php
+			type:"post",				//Método de envio
+			data: "login="+login+"&senha="+senha,	//Dados
+   			success: function (result){			//Sucesso no AJAX
+                		if(result==1){
+                			location.href='restrito.php'	//Redireciona
+                		}else{
+                			$('#errolog').show();		//Informa o erro
+                		}
+            		}
+		})
+		return false;	//Evita que a página seja atualizada
+	})
+})
+</script>
   <div class="login-form">
   <div class="login_main-div">
     <div class="panel">
